@@ -212,7 +212,7 @@ ON public.ratings(driver_id);
 """
 
 cursor.execute(create_tables_sql)
-
+conn.commit()
 print("Tables created successfully")
 
 
