@@ -1,11 +1,14 @@
 import os
 import sys
 
+from dotenv import load_dotenv
+
+load_dotenv()
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from utils.llm_pick import pick_llm
 from utils.database import DatabaseUtil
-from Models.schema import AgentSchema, JudgeSchema
+from models.schema import AgentSchema, JudgeSchema
 from langchain_core.messages import AIMessage, HumanMessage
 from langgraph.graph import StateGraph, START, END
 

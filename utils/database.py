@@ -85,7 +85,11 @@ obj = DatabaseUtil({
     "dbname": "postgres"
 })
 
-result = obj.schema_details("public")
 
-with open("test_schema_details.txt", "w") as f:
-    f.write(result)
+
+
+if __name__ == "__main__":
+    result = obj.schema_details("public")
+
+    with open("test_schema_details.txt", "w") as f:
+        f.write(result)
