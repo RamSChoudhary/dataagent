@@ -81,8 +81,8 @@ obj = DatabaseUtil({
     "host": "localhost",
     "port": 5432,
     "user": "postgres",
-    "password": "potgres",
-    "dbname": "postgres"
+    "password": "Welcome-123",
+    "database": "agentdb"
 })
 
 

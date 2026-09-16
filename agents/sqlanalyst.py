@@ -38,7 +38,7 @@ def prompt_query_context(state: AgentSchema) -> AgentSchema:
         "port": os.environ['port'],
         "user": os.environ['user'],
         "password": os.environ['password'],
-        "dbname": os.environ['database']
+        "database": os.environ['database']
     }
 
     obj = DatabaseUtil(conn_details)
@@ -129,7 +129,7 @@ def execute_sql(state: AgentSchema) -> AgentSchema:
         "port": os.environ['port'],
         "user": os.environ['user'],
         "password": os.environ['password'],
-        "dbname": os.environ['database']
+        "database": os.environ['database']
     }
 
     obj = DatabaseUtil(conn_details)
